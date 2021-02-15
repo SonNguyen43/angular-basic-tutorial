@@ -1,0 +1,13 @@
+<app-card>
+  <div class="title">Structural Directive - *ngFor</div>
+  <div>
+    <ul style="list-style: circle">
+      <li *ngFor="let movie of movies; index as i; first as f; last as l">
+        <div>Title: {{ movie.title }}</div>
+        <div>Index: {{ i }}</div>
+        <div>First: {{ f }}</div>
+        <div>Last: {{ l }}</div>
+      </li>
+    </ul>
+  </div>
+</app-card>
